@@ -11,33 +11,79 @@
     <!-- 标题为Teach_day1 -->
     <style>
         * {
-            padding: 0;  /*边框为0像素*/
+            padding: 0;
+            /*边框为0像素*/
             margin: 0;
         }
 
         #first {
-            font-family: 'Courier New', Courier, monospace;/*字体为Courier New*/
-            font-weight: lighter;/*使字体变细*/
-            background: url("https://i.loli.net/2019/10/06/PSfmOheD5UF3lKc.jpg");/*使用bg1.jpg这张背景*/
+            font-family: 'Courier New', Courier, monospace;
+            /*字体为Courier New*/
+            font-weight: lighter;
+            /*使字体变细*/
+            background: url("./photos/bg1.jpg");
+            /*使用bg1.jpg这张背景*/
         }
 
         .word1 {
-            font-size: 40px;/*字体大小40像素*/
-            line-height: 600px;/*行高600像素*/
-        }
-        .word2{
             font-size: 40px;
-            position: relative;/*绝对定位*/
-            top:-250px;/*上移250像素*/
+            /*字体大小40像素*/
+            line-height: 600px;
+            /*行高600像素*/
+        }
+
+        .word2 {
+            font-size: 40px;
+            position: relative;
+            /*绝对定位*/
+            top: -250px;
+            /*上移250像素*/
+        }
+
+        @media screen and (max-width: 800px) {
+            * {
+                padding: 0;
+                /*边框为0像素*/
+                margin: 0;
+            }
+
+            #first {
+                font-family: 'Courier New', Courier, monospace;
+                /*字体为Courier New*/
+                font-weight: lighter;
+                /*使字体变细*/
+                background: url("./photos/bg1.jpg");
+                /*使用bg1.jpg这张背景*/
+            }
+
+            .word1 {
+                font-size: 30px;
+                /*字体大小40像素*/
+                line-height: 60px;
+                /*行高600像素*/
+                color:white;
+                /* 颜色为白色 */
+                position: relative;
+                top:30%;
+            }
+
+            .word2 {
+                font-size: 40px;
+                position: relative;
+                /*绝对定位*/
+                top: -250px;
+                /*上移250像素*/
+            }
         }
     </style>
 </head>
 <!-- 加载完成时执行main()函数 -->
+
 <body onload="main()">
     <center>
         <!-- center将在html的下一代版本中不可用 -->
         <div id="first">
-            <h1 class="word1">A misunderstood integrated development environment</h1>
+            <h1 class="word1">A misunderstood integrated development environment.</h1>
             <h1 class="word2">DEV-C++</h1>
         </div>
     </center>
