@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 使用utf-8编码模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 微软向着自家浏览器做的优化 -->
+    <title>Teach_day1</title>
+    <!-- 标题为Teach_day1 -->
+    <style>
+        * {
+            padding: 0;  /*边框为0像素*/
+            margin: 0;
+        }
+
+        #first {
+            font-family: 'Courier New', Courier, monospace;/*字体为Courier New*/
+            font-weight: lighter;/*使字体变细*/
+            background: url("./photos/bg1.jpg");/*使用bg1.jpg这张背景*/
+        }
+
+        .word1 {
+            font-size: 40px;/*字体大小40像素*/
+            line-height: 600px;/*行高600像素*/
+        }
+        .word2{
+            font-size: 40px;
+            position: relative;/*绝对定位*/
+            top:-250px;/*上移250像素*/
+        }
+    </style>
+</head>
+<!-- 加载完成时执行main()函数 -->
+<body onload="main()">
+    <center>
+        <!-- center将在html的下一代版本中不可用 -->
+        <div id="first">
+            <h1 class="word1">A misunderstood integrated development environment</h1>
+            <h1 class="word2">DEV-C++</h1>
+        </div>
+    </center>
+    <script>
+        function main() {
+            var ih;
+            var mih;
+            ih = innerHeight;
+            //将ih赋值为浏览器的高
+            first.style.height = ih + "px";
+            //将first的style中的height(高)改为浏览器的高
+
+        }
+    </script>
+</body>
+
+</html>
